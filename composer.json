@@ -1,0 +1,23 @@
+{
+    "name": "vtitar/background-tasks-symfony",
+    "description": "Symfony BackgroundTasksBundle. Create and process tasks that will be executed via cron. Could be configured time when execute, separate process for specific task groups.",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=8.2",
+        "symfony/framework-bundle": "^7",
+        "doctrine/orm": "^2.17",
+        "symfony/monolog-bundle": "^3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tit\\BackgroundTasksBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "vtitar",
+            "email": "v.titarenko.magentodev@gmail.com"
+        }
+    ]
+}

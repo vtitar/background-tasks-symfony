@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+<!--        Commands-->
+
+        <service id="tit.background_tasks.command.run_background_task" class="Tit\BackgroundTasksBundle\Command\RunBackgroundTaskCommand">
+            <argument type="service" id="service_container" />
+            <argument type="service" id="tit.background_tasks.manager.background_task" />
+            <argument type="service" id="monolog.logger" />
+            <tag name="console.command"  />
+        </service>
+
+<!--        Managers-->
+
+        <service id="tit.background_tasks.manager.background_task" class="Tit\BackgroundTasksBundle\Service\Manager\BackgroundTaskManager">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+        </service>
+
+    </services>
+</container>
