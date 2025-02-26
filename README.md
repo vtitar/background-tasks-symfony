@@ -5,7 +5,13 @@ task should be executed, separate process for specific task groups.
 
 # 2. Installation
 
+### Install bundle
+
 `composer require vtitar/background-tasks-symfony`
+
+### Create db after installation
+
+`./bin/console doctrine:schema:update`
 
 # 3. Configuration
 
