@@ -6,7 +6,8 @@
         "php": ">=8.2",
         "symfony/framework-bundle": "^7",
         "doctrine/orm": "^2.17",
-        "symfony/monolog-bundle": "^3.0"
+        "symfony/monolog-bundle": "^3.0",
+        "doctrine/doctrine-bundle": "^2.13"
     },
     "license": "MIT",
     "autoload": {
