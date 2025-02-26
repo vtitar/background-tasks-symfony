@@ -6,6 +6,10 @@
 
     <services>
 
+<!--        Aliases-->
+
+        <service id="Tit\BackgroundTasksBundle\Service\Manager\BackgroundTaskManager" alias="tit.background_tasks.manager.background_task" />
+
 <!--        Commands-->
 
         <service id="tit.background_tasks.command.run_background_task" class="Tit\BackgroundTasksBundle\Command\RunBackgroundTaskCommand">
